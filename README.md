@@ -10,6 +10,8 @@
 [![Eval](https://img.shields.io/badge/eval-30%2F33%20vs%2022%2F33%20baseline-black.svg)](#proven-not-claimed)
 [![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-black.svg)](#install)
 [![Agent Skills](https://img.shields.io/badge/agentskills.io-compatible-black.svg)](https://agentskills.io)
+[![Listed in awesome-ai-plugins](https://img.shields.io/badge/listed-awesome--ai--plugins-black.svg)](https://github.com/hashgraph-online/awesome-ai-plugins)
+[![HOL scan](https://img.shields.io/badge/HOL%20scan-100%2F100-black.svg)](https://hol.org/registry/plugins)
 
 </div>
 
