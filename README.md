@@ -75,8 +75,8 @@ and without the skill; a stronger model grades both answers **blind** (shuffled 
 | | Without | **With masry-skills** |
 |---|---:|---:|
 | Expectations met (graded blind) | 22 / 33 | **30 / 33** |
-| MSA words in Egyptian text (`هذا`، `سوف`، `الذي`…) | 3 | **0** |
-| AI tells (`في عالمنا المتسارع`، `تجربة فريدة`…) | 2 | **0** |
+| MSA words in Egyptian text (e.g. هذا، سوف، الذي) | 3 | **0** |
+| AI tells (e.g. تجربة فريدة) | 2 | **0** |
 | Em dashes | 1 | **0** |
 | Picked as more natural by the grader | 2 / 10 | **8 / 10** |
 
@@ -121,25 +121,37 @@ It works on its own whenever you ask for Arabic aimed at Egyptians. No command n
 | Email to a company you don't know | Polite Egyptian, MSA-leaning words |
 
 **2. Writes Egyptian grammar, not MSA with slang on top.**
-`مش` not `لا/لم/لن`, `ده` not `هذا`, `هـ` not `سوف`, `اللي` not `الذي`, `إزاي` not `كيف`.
+
+| | MSA (what AI writes) | Egyptian (what it writes) |
+|---|:---:|:---:|
+| Negation | لا / لم / لن | مش / ما...ش |
+| This | هذا / هذه | ده / دي |
+| Future | سوف | هـ |
+| Which / who | الذي / التي | اللي |
+| How | كيف | إزاي |
 
 **3. Strips the tells.** The five that give AI Arabic away fastest:
 
 | Tell | Instead |
 |---|---|
-| `في عالمنا المتسارع` / `في ظل التطور` | Start with the point |
-| `يلعب دوراً محورياً` | Say what it actually does |
-| `تجربة فريدة لا مثيل لها` | A fact about it, or nothing |
-| `بالإضافة إلى ذلك` / `حيث إن` | `وكمان`, or a new sentence |
-| `لا تتردد في التواصل معنا` | `كلمنا على [رقم]` |
+| <div dir="rtl">في عالمنا المتسارع / في ظل التطور</div> | Start with the point |
+| <div dir="rtl">يلعب دوراً محورياً</div> | Say what it actually does |
+| <div dir="rtl">تجربة فريدة لا مثيل لها</div> | A fact about it, or nothing |
+| <div dir="rtl">بالإضافة إلى ذلك / حيث إن</div> | «وكمان», or a new sentence |
+| <div dir="rtl">لا تتردد في التواصل معنا</div> | «كلمنا على [رقم]» |
 
 [The full list, with fixes →](skills/masry-writing/references/tells.md)
 
 **4. Never invents.** No made-up prices, ingredients, discounts, urgency
-(`قبل ما تخلص`) or promises (`هنعوضك`). Missing facts become `[ ... ]`.
+(«قبل ما تخلص») or promises («هنعوضك»). Missing facts become `[ ... ]`.
 
-**5. Reads Franco.** `3`→ع, `7`→ح, `2`→ء, `5`→خ, and keeps `project`, `server`,
-`deadline` as Egyptians say them.
+**5. Reads Franco.**
+
+| Franco | 3 | 7 | 2 | 5 |
+|---|:---:|:---:|:---:|:---:|
+| Arabic | ع | ح | ء | خ |
+
+English words like *project*, *server* and *deadline* stay the way Egyptians say them.
 
 ## Known limits
 
