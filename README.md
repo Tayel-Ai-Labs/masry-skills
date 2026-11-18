@@ -85,73 +85,30 @@ Counts are regex, not opinion. Run it yourself: <code>python3 skills/masry-writi
 
 ## Install
 
-### Claude Code
+**Claude Code**
 
 ```text
 /plugin marketplace add Tayel-Ai-Labs/masry-skills
 /plugin install masry-skills@masry-skills
 ```
 
-### Codex, Cursor, Gemini CLI and other agents
+**Codex, Cursor, Gemini CLI and any other agent**
 
 ```bash
 npx skills add Tayel-Ai-Labs/masry-skills --global --agent '*'
 ```
 
-### Claude.ai and Claude Desktop
-
-Download [`skills/masry-writing`](skills/masry-writing) as a ZIP and upload it as a skill in
-Settings.
-
-### By hand
-
-Copy the `skills/masry-writing` folder into your agent's skills folder
-(`~/.claude/skills/` for Claude Code).
+Or copy [`skills/masry-writing`](skills/masry-writing) into your agent's skills folder.
 
 ## What it does
 
-It works on its own whenever you ask for Arabic aimed at Egyptians. No command needed.
+It runs on its own whenever you ask for Arabic aimed at Egyptians.
 
-**1. Picks the register before writing a word.**
-
-| You're writing | It writes |
-|---|---|
-| Posts, captions, ads, menus, WhatsApp, app UI, explaining to a student | Egyptian Arabic |
-| Contracts, official letters, government forms | Short, plain MSA |
-| Email to a company you don't know | Polite Egyptian, MSA-leaning words |
-
-**2. Writes Egyptian grammar, not MSA with slang on top.**
-
-| | MSA (what AI writes) | Egyptian (what it writes) |
-|---|:---:|:---:|
-| Negation | لا / لم / لن | مش / ما...ش |
-| This | هذا / هذه | ده / دي |
-| Future | سوف | هـ |
-| Which / who | الذي / التي | اللي |
-| How | كيف | إزاي |
-
-**3. Strips the tells.** The five that give AI Arabic away fastest:
-
-| Tell | Instead |
-|---|---|
-| <div dir="rtl">في عالمنا المتسارع / في ظل التطور</div> | Start with the point |
-| <div dir="rtl">يلعب دوراً محورياً</div> | Say what it actually does |
-| <div dir="rtl">تجربة فريدة لا مثيل لها</div> | A fact about it, or nothing |
-| <div dir="rtl">بالإضافة إلى ذلك / حيث إن</div> | «وكمان», or a new sentence |
-| <div dir="rtl">لا تتردد في التواصل معنا</div> | «كلمنا على [رقم]» |
-
-[The full list, with fixes →](skills/masry-writing/references/tells.md)
-
-**4. Never invents.** No made-up prices, ingredients, discounts, urgency
-(«قبل ما تخلص») or promises («هنعوضك»). Missing facts become `[ ... ]`.
-
-**5. Reads Franco.**
-
-| Franco | 3 | 7 | 2 | 5 |
-|---|:---:|:---:|:---:|:---:|
-| Arabic | ع | ح | ء | خ |
-
-English words like *project*, *server* and *deadline* stay the way Egyptians say them.
+- **Picks the register first.** Egyptian for posts, WhatsApp, menus and app UI; short, plain MSA for contracts and official letters.
+- **Writes Egyptian grammar,** not MSA with slang on top: مش, ده, اللي, إزاي.
+- **Strips the tells** that give AI Arabic away. [The full list, with fixes →](skills/masry-writing/references/tells.md)
+- **Never invents** prices, ingredients, discounts, urgency or promises. Missing facts become `[ ... ]`.
+- **Reads Franco** and keeps words like *project* and *server* the way Egyptians say them.
 
 ## Known limits
 
