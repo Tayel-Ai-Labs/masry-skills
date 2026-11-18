@@ -1,0 +1,108 @@
+{
+  "skill_name": "masry-writing",
+  "evals": [
+    {
+      "id": 1,
+      "register": "egyptian",
+      "prompt": "اكتبلي بوست فيسبوك لكافيه بيعلن عن مشروب جديد: سبانش لاتيه بالبندق، سعره 95 جنيه.",
+      "expectations": [
+        "egyptian-register: written in Egyptian Arabic, not MSA.",
+        "price-exact: states the price as 95 جنيه and invents no other prices, offers or dates.",
+        "no-invented-facts: does not invent ingredients, origins, awards or claims beyond what the prompt gives.",
+        "no-tells: contains none of the AI openers or closers (في عالمنا، تجربة فريدة، لا تتردد، في الختام، etc.)."
+      ]
+    },
+    {
+      "id": 2,
+      "register": "egyptian",
+      "prompt": "e3mly caption instagram l brand hdoom oversized streetwear, el collection el gdeda nzlt youm el gom3a",
+      "expectations": [
+        "arabic-script: the caption is in Arabic script, not Franco.",
+        "egyptian-register: Egyptian Arabic, not MSA.",
+        "latin-terms: keeps terms like oversized / streetwear / collection in Latin script or uses the Arabic form Egyptians actually say; does not transliterate them awkwardly.",
+        "no-invented-facts: invents no prices, discounts or brand name."
+      ]
+    },
+    {
+      "id": 3,
+      "register": "egyptian",
+      "prompt": "خلي الكلام ده مصري طبيعي، لأنه باين إنه مكتوب بالـ AI:\n\nفي عالمنا المتسارع، تلعب القهوة دوراً محورياً في حياتنا اليومية. حيث إن كافيه النخلة يقدم تجربة فريدة لا مثيل لها لعشاق القهوة. بالإضافة إلى ذلك، نحن نسعى جاهدين لتقديم أفضل المشروبات. وفي الختام، لا تتردد في زيارتنا!",
+      "expectations": [
+        "egyptian-register: the rewrite is Egyptian Arabic.",
+        "tells-removed: none of في عالمنا المتسارع، دوراً محورياً، حيث إن، تجربة فريدة، لا مثيل لها، بالإضافة إلى ذلك، نسعى جاهدين، في الختام، لا تتردد remain.",
+        "meaning-kept: still an invitation to visit the cafe; adds no new facts (no prices, addresses or menu items)."
+      ]
+    },
+    {
+      "id": 4,
+      "register": "egyptian",
+      "prompt": "اكتب رسالة واتساب لولي أمر طالب اسمه يوسف، إنه غاب عن حصة الفيزيا امبارح، والحصة الجاية يوم السبت الساعة 5.",
+      "expectations": [
+        "egyptian-register: polite Egyptian Arabic suitable for a parent, not stiff MSA.",
+        "facts-exact: mentions يوسف, the missed physics class yesterday, and Saturday at 5; no invented details.",
+        "whatsapp-length: short enough for a WhatsApp message (no headings, no bullet lists)."
+      ]
+    },
+    {
+      "id": 5,
+      "register": "egyptian",
+      "prompt": "اشرح لطالب ثانوية عامة يعني إيه المشتقة (derivative) بطريقة بسيطة.",
+      "expectations": [
+        "egyptian-register: the explanation is in Egyptian Arabic.",
+        "exam-terms-kept: uses the MSA math terms the exam uses (المشتقة، معدل التغير، الميل) rather than replacing them with slang.",
+        "correct: the explanation is mathematically correct (rate of change / slope of the tangent)."
+      ]
+    },
+    {
+      "id": 6,
+      "register": "msa",
+      "prompt": "اكتب خطاب رسمي لمصلحة الضرائب المصرية نطلب فيه تحديد موعد لمراجعة الإقرار الضريبي لشركة Tayel AI Labs.",
+      "expectations": [
+        "msa-register: written in formal Modern Standard Arabic, with no Egyptian colloquial words (ده، مش، عايزين، إزاي).",
+        "simple-msa: sentences are short and direct, without ornamental phrases.",
+        "placeholders-not-invented: uses placeholders for unknown details (tax ID, dates, signatory) instead of inventing them."
+      ]
+    },
+    {
+      "id": 7,
+      "register": "egyptian",
+      "prompt": "I need Arabic UI text for a food delivery app aimed at Egyptians: labels for 'Add to cart', 'Checkout', 'Track order', and an empty-cart message.",
+      "expectations": [
+        "egyptian-register: strings are natural Egyptian app Arabic.",
+        "no-qum-bi: does not use قم بـ or يمكنك constructions.",
+        "short-labels: button labels are 1-3 words."
+      ]
+    },
+    {
+      "id": 8,
+      "register": "egyptian",
+      "prompt": "اكتب وصف منتج لهودي أسود oversized، قطن 100%، سعره 850 جنيه. متألفش أي معلومة مش موجودة.",
+      "expectations": [
+        "egyptian-register: Egyptian Arabic.",
+        "facts-exact: black, oversized, 100% cotton, 850 جنيه; no invented weight, sizes, fabric origin or care instructions.",
+        "no-tells: no inflated phrases (الأفضل على الإطلاق، تجربة فريدة، لا مثيل لها)."
+      ]
+    },
+    {
+      "id": 9,
+      "register": "egyptian",
+      "prompt": "عميل كتب ريفيو نجمة واحدة على جوجل ماب: 'الأوردر اتأخر ساعة ونص ووصل بارد'. اكتب رد باسم المطعم.",
+      "expectations": [
+        "egyptian-register: polite Egyptian Arabic.",
+        "owns-problem: acknowledges the specific problem (late by an hour and a half, arrived cold) rather than a generic apology.",
+        "no-invented-offers: does not invent a discount, refund or phone number; uses a placeholder if a contact is needed.",
+        "no-closer-tells: avoids لا تتردد في التواصل معنا and نتمنى لكم."
+      ]
+    },
+    {
+      "id": 10,
+      "register": "egyptian",
+      "prompt": "7awel el kalam da l 3araby: ana msh 3aref a5ales el project 3ashan el server w2e3 mn embare7",
+      "expectations": [
+        "arabic-script: output is in Arabic script.",
+        "faithful: the meaning is exactly: I can't finish the project because the server has been down since yesterday.",
+        "latin-terms: project and server stay in Latin script or as the Egyptian loanword (البروجكت، السيرفر); not translated to MSA (المشروع، الخادم)."
+      ]
+    }
+  ]
+}

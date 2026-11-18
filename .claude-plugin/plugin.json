@@ -1,0 +1,14 @@
+{
+  "name": "masry-skills",
+  "description": "Make AI write Egyptian Arabic the way Egyptians write it: the right register, Egyptian grammar, no AI tells, no invented facts.",
+  "version": "0.3.0",
+  "author": {
+    "name": "Tayel AI Labs",
+    "url": "https://github.com/Tayel-Ai-Labs"
+  },
+  "homepage": "https://github.com/Tayel-Ai-Labs/masry-skills",
+  "repository": "https://github.com/Tayel-Ai-Labs/masry-skills",
+  "license": "MIT",
+  "keywords": ["arabic", "egyptian", "masry", "writing", "humanize", "localization", "franco"],
+  "skills": ["./skills/masry-writing"]
+}

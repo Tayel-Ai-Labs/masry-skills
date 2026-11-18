@@ -1,0 +1,572 @@
+[
+  {
+    "id": 1,
+    "prompt": "اكتبلي بوست فيسبوك لكافيه بيعلن عن مشروب جديد: سبانش لاتيه بالبندق، سعره 95 جنيه.",
+    "register": "egyptian",
+    "baseline": {
+      "text": "☕ خبر لذيذ في طريقه ليك!\n\nجديدنا في الكافيه: سبانش لاتيه بالبندق 🌰❤️\n\nمزيج ساخن من الإسبريسو الغني، مع لمسة البندق المحمّص، وطبقة كريمة ناعمة فوقه... تجربة لازم تجربها!\n\nبسعر 95 جنيه بس 😍\n\nتعال جرّبه وقولنا رأيك 👇\n\n📍 [مكان الفرع]\n🕐 [مواعيد العمل]\n\n#قهوة #سبانش_لاتيه #كافيه\n\nلو حابب أضيف اسم الكافيه أو العنوان أو أي تفاصيل تانية، قولي وأعدّل البوست.",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 0
+      },
+      "grades": {
+        "egyptian-register": {
+          "pass": true,
+          "why": "Mostly Egyptian (في طريقه ليك، تعال جرّبه وقولنا رأيك، قولي وأعدّل), but the description line «مزيج ساخن من الإسبريسو الغني» reads like translated MSA ad copy."
+        },
+        "price-exact": {
+          "pass": true,
+          "why": "States 95 جنيه and adds no other price or offer; the branch and hours are blank placeholders, not made-up values."
+        },
+        "no-invented-facts": {
+          "pass": false,
+          "why": "Adds details the prompt never gave: الإسبريسو الغني، البندق المحمّص، طبقة كريمة ناعمة فوقه، and that the drink is ساخن."
+        },
+        "no-tells": {
+          "pass": false,
+          "why": "«تجربة لازم تجربها» is a version of the تجربة فريدة tell, and it ends with an assistant line («لو حابب أضيف... قولي وأعدّل البوست») that is not part of the post."
+        }
+      }
+    },
+    "skill": {
+      "text": "جديد عندنا ☕\n\nسبانش لاتيه بالبندق، بـ 95 جنيه.\n\nجرّبوه وقولولنا رأيكم 🤎",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 0
+      },
+      "grades": {
+        "egyptian-register": {
+          "pass": true,
+          "why": "Natural Egyptian: جديد عندنا، جرّبوه وقولولنا رأيكم."
+        },
+        "price-exact": {
+          "pass": true,
+          "why": "Gives exactly بـ 95 جنيه and nothing else."
+        },
+        "no-invented-facts": {
+          "pass": true,
+          "why": "Mentions only the drink name and price from the prompt."
+        },
+        "no-tells": {
+          "pass": true,
+          "why": "Short and direct, with no stock AI openers or closers."
+        }
+      }
+    },
+    "more_natural": "skill"
+  },
+  {
+    "id": 2,
+    "prompt": "e3mly caption instagram l brand hdoom oversized streetwear, el collection el gdeda nzlt youm el gom3a",
+    "register": "egyptian",
+    "baseline": {
+      "text": "هيلز كابشنز لإنستجرام للدروب بتاعك، بستايل مصري ستريت وير 🔥\n\n**١.**\nالكولكشن الجديد نازل يوم الجمعة 🖤\nاستعد تبقى مختلف.\n#OversizedOnly\n\n**٢.**\nمش موضة... ستايل.\nالدروب الجديد بعد يومين ⏳🔥\nكن أول اللي يلبسه.\n\n**٣.**\nOversized. Different. Us.\nكولكشن جديد كله، نازل يوم الجمعة 🖤\nتابعنا عشان ما تفوتش حاجة.\n\n**٤.**\nمستعدين؟ 👀\nلأن اللبس الجديد مش زي بتاعك خالص.\nالجمعة الجاية، كله هيتغير.\n#StreetwearEgypt\n\n**٥.**\nحاسس إن دولابك ناقصه حاجة؟\nانتظر لحد يوم الجمعة 🔥🖤\nكولكشن جديد، فايب جديد، إحنا جديد.\n\nلو عايز أعمل نسخة بهاشتاجات أكتر، أو بأسلوب أخف/أرسمي، أو بلغة إنجليزي-مصري ميكس (Franco)، قولي بس 🙌",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 0
+      },
+      "grades": {
+        "arabic-script": {
+          "pass": true,
+          "why": "The captions are mostly in Arabic script. The English hashtags and the line «Oversized. Different. Us.» are acceptable mixing, not Franco."
+        },
+        "egyptian-register": {
+          "pass": false,
+          "why": "Several MSA forms slip in: كن أول، استعد، انتظر. It also has broken phrases: «هيلز كابشنز» and «إحنا جديد»."
+        },
+        "latin-terms": {
+          "pass": true,
+          "why": "كولكشن and دروب are natural, and Oversized and Streetwear are kept in Latin script."
+        },
+        "no-invented-facts": {
+          "pass": false,
+          "why": "No prices or brand name are invented, but it invents timing («بعد يومين»، «الجمعة الجاية»). It also treats the collection as upcoming when the request says it already dropped (nzlt)."
+        }
+      }
+    },
+    "skill": {
+      "text": "كولكشن جديد نزل، هدوم أوفرسايز ستريت وير من أول يوم الجمعة.\n\nقيسه وشوف شكله عليك، وبعتلنا رأيك.\n\n---\n\nملحوظة: مش عندي تفاصيل زي اسم البراند أو أسعار أو ألوان القطع، فالكابشن عام. لو تبعتلي التفاصيل دي أقدر أكتبه أدق.",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 0
+      },
+      "grades": {
+        "arabic-script": {
+          "pass": true,
+          "why": "The caption is fully in Arabic script with no Franco."
+        },
+        "egyptian-register": {
+          "pass": true,
+          "why": "The caption is Egyptian (قيسه، شوف، مش عندي). One slip: «بعتلنا» should be «ابعتلنا», since as written it reads as past tense, not an imperative."
+        },
+        "latin-terms": {
+          "pass": true,
+          "why": "Uses كولكشن، أوفرسايز، ستريت وير, which are the forms Egyptians actually say."
+        },
+        "no-invented-facts": {
+          "pass": true,
+          "why": "Invents no prices, discounts or brand name, and states plainly that it doesn't have those details."
+        }
+      }
+    },
+    "more_natural": "skill"
+  },
+  {
+    "id": 3,
+    "prompt": "خلي الكلام ده مصري طبيعي، لأنه باين إنه مكتوب بالـ AI:\n\nفي عالمنا المتسارع، تلعب القهوة دوراً محورياً في حياتنا اليومية. حيث إن كافيه النخلة يقدم تجربة فريدة لا مثيل لها لعشاق القهوة. بالإضافة إلى ذلك، نحن نسعى جاهدين لتقديم أفضل المشروبات. وفي الختام، لا تتردد في زيارتنا!",
+    "register": "egyptian",
+    "baseline": {
+      "text": "في عالمنا المتسارع ده، القهوة بقت جزء أساسي من يومنا. وكافيه النخلة بيقدملك تجربة مختلفة فعلاً لأي حد بيحب القهوة. وإحنا دايماً بنحاول نطلع لك أحسن مشروبات. يلا طمنا بزيارتك!",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 2,
+        "tell_phrases": [
+          "في عالمنا",
+          "عالمنا المتسارع"
+        ],
+        "dashes": 0
+      },
+      "grades": {
+        "egyptian-register": {
+          "pass": true,
+          "why": "Natural Egyptian throughout: ده، بقت، بيقدملك، إحنا، دايماً، بنحاول، نطلع لك، يلا طمنا."
+        },
+        "tells-removed": {
+          "pass": false,
+          "why": "\"في عالمنا المتسارع\" is still there, kept word for word with ده added."
+        },
+        "meaning-kept": {
+          "pass": true,
+          "why": "It keeps every point and ends by inviting people to visit (يلا طمنا بزيارتك). No new facts are added."
+        }
+      }
+    },
+    "skill": {
+      "text": "كافيه النخلة بيحب القهوة قد ما بتحبها. جاي كل يوم بتشربها علشان هي اللي بتفتح عقلك وتفضل صاحي. جرب مشروباتنا وقولنا رأيك فيها.\n\n---\nشلت العبارات اللي زي \"رحلة فريدة\" و\"نسعى جاهدين\" لأنها كانت كلام فاضي، وكتبت حاجة ملموسة بدل منها. لو عندك تفاصيل فعلية (نوع قهوة، سعر، عرض)، قولّي أضيفها.",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 0
+      },
+      "grades": {
+        "egyptian-register": {
+          "pass": true,
+          "why": "Uses Egyptian forms like بيحب، علشان، صاحي، قولنا، جرب, although some sentences are broken (\"جاي كل يوم بتشربها\")."
+        },
+        "tells-removed": {
+          "pass": true,
+          "why": "None of the listed phrases are in the rewrite. \"رحلة فريدة\" only appears in the note after it."
+        },
+        "meaning-kept": {
+          "pass": false,
+          "why": "It adds a new claim that coffee opens your mind and keeps you awake, and changes the meaning. It drops the invitation to visit, replacing it with \"try our drinks and tell us what you think\", and drops the unique-experience and best-drinks points."
+        }
+      }
+    },
+    "more_natural": "baseline"
+  },
+  {
+    "id": 4,
+    "prompt": "اكتب رسالة واتساب لولي أمر طالب اسمه يوسف، إنه غاب عن حصة الفيزيا امبارح، والحصة الجاية يوم السبت الساعة 5.",
+    "register": "egyptian",
+    "baseline": {
+      "text": "السلام عليكم،\n\nتحية طيبة، نحب نعلمكم إن الطالب يوسف غاب عن حصة الفيزيا امبارح.\n\nيرجى العلم إن الحصة الجاية يوم السبت الساعة 5، ونتمنى الحضور في وقتها.\n\nتحياتنا 🌸",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 0
+      },
+      "grades": {
+        "egyptian-register": {
+          "pass": false,
+          "why": "The core sentences are Egyptian, but stiff formal Arabic like 'يرجى العلم' and 'تحية طيبة' makes it read like an official notice instead of a friendly message to a parent."
+        },
+        "facts-exact": {
+          "pass": true,
+          "why": "Includes يوسف, the missed physics class yesterday and Saturday at 5. 'ونتمنى الحضور في وقتها' is a polite request, not an invented fact."
+        },
+        "whatsapp-length": {
+          "pass": true,
+          "why": "Short with no headings or bullets. The extra line breaks and sign-off are acceptable on WhatsApp."
+        }
+      }
+    },
+    "skill": {
+      "text": "السلام عليكم، يوسف غاب عن حصة الفيزيا امبارح، ياريت نلحق بالمنهج. الحصة الجاية يوم السبت الساعة 5.",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 0
+      },
+      "grades": {
+        "egyptian-register": {
+          "pass": true,
+          "why": "Natural, polite Egyptian Arabic (امبارح، ياريت، الجاية). It is a bit abrupt and could use a softer address to the parent, and 'نلحق بالمنهج' reads slightly off (more natural: 'نلحق المنهج')."
+        },
+        "facts-exact": {
+          "pass": true,
+          "why": "Names يوسف, says he missed physics yesterday and gives Saturday at 5. The catch-up line is a suggestion, not a new fact."
+        },
+        "whatsapp-length": {
+          "pass": true,
+          "why": "Two short sentences with no headings or bullet points."
+        }
+      }
+    },
+    "more_natural": "skill"
+  },
+  {
+    "id": 5,
+    "prompt": "اشرح لطالب ثانوية عامة يعني إيه المشتقة (derivative) بطريقة بسيطة.",
+    "register": "egyptian",
+    "baseline": {
+      "text": "# المشتقة (Derivative) ببساطة\n\n## الفكرة الأساسية\nالمشتقة هي **معدل التغيّر اللحظي** لدالة، أو ببساطة: **\"بكام معدل الدالة بتتغيّر عند نقطة معينة؟\"**\n\n## مثال من الحياة\nلما تكون راكب عربية والسرعة (Speedometer) بتوريك 80 كم/س، فإنت مش بتقصد إنك هتعدي 80 كم في الساعة اللي جاية بالضبط، لكن بتقصد: **\"في اللحظة دي بالذات، معدل تغيّر موقعي هو 80 كم/س\"**\n\n👉 السرعة اللحظية = **مشتقة** دالة المسافة بالنسبة للزمن\n\n## لماذا نحتاج المشتقة؟\nلو عندك دالة بتمثل مسافة سيارة بمرور الوقت (منحنى مش خط مستقيم)، السرعة بتتغيّر باستمرار. السؤال: إزاي أعرف السرعة في لحظة واحدة بالضبط؟\n\n**الحل:** نحسب الميل (Slope) بين نقطتين قريبين جدًا من بعض على المنحنى، وكل ما قربناهم من بعض أكتر، كل ما حسبنا السرعة اللحظية بدقة أكبر.\n\n## التعريف الرياضي\n$$f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}$$\n\nيعني: الميل بين نقطتين على المنحنى، لما المسافة بينهم (h) تقرب من الصفر.\n\n## بصريًا (الأهم للفهم)\nالمشتقة عند نقطة = **ميل خط المس (Tangent Line)** للمنحنى عند هذه النقطة.\n\n- لو المنحنى صاعد → المشتقة موجبة (+)\n- لو المنحنى نازل → المشتقة سالبة (−)\n- لو المنحنى عنده قمة أو قاعدة (نقطة حرجة) → المشتقة = صفر\n\n## قاعدة بسيطة للحساب\nلو $f(x) = x^n$ فإن:\n$$f'(x) = n \\cdot x^{n-1}$$\n\n**مثال:** $f(x) = x^2 \\Rightarrow f'(x) = 2x$\n\nلو حسبنا المشتقة عند $x=3$: $f'(3) = 6$، يعني عند هذه النقطة، الدالة بتزيد بمعدل 6 وحدة لكل وحدة زيادة في x.\n\n## خلاصة في جملة واحدة\n**المشتقة بتقولك: \"لو غيّرت x شوية صغير جدًا، y هتتغيّر بكام؟\"**\n\n---\nهل تريد أمثلة محلولة أو شرح قواعد المشتقات الأساسية (كالجمع، الضرب، تركيب الدوال)؟",
+      "checks": {
+        "register_slips": 3,
+        "slip_words": [
+          "لماذا",
+          "هذه"
+        ],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 0
+      },
+      "grades": {
+        "egyptian-register": {
+          "pass": false,
+          "why": "Most of the body is Egyptian (بتتغيّر، إزاي، شوية)، but there's noticeable MSA mixed in: the heading 'لماذا نحتاج المشتقة؟', 'فإن', 'عند هذه النقطة', and the closing question 'هل تريد أمثلة محلولة...' is fully MSA."
+        },
+        "exam-terms-kept": {
+          "pass": true,
+          "why": "Uses المشتقة، معدل التغيّر اللحظي and الميل. It says 'خط المس' instead of the textbook term 'المماس', but none of the three required terms is replaced with slang."
+        },
+        "correct": {
+          "pass": true,
+          "why": "It covers instantaneous rate of change, the limit definition, the slope of the tangent, the sign of the derivative, and the power rule with the correct example f'(3)=6."
+        }
+      }
+    },
+    "skill": {
+      "text": "المشتقة ببساطة هي بتقولك الدالة بتتغير بسرعة إيه عند نقطة معينة. يعني مش قيمة الدالة نفسها، لكن إيه معدل التغير بتاعها في تلك اللحظة.\n\nخدها بمثال قريب: لو عندك سيارة والمسافة اللي قطعتها بتتغير مع الزمن، المشتقة هنا هي السرعة. يعني لو عندك دالة المسافة بالنسبة للزمن، مشتقتها بتقولك السرعة في أي لحظة.\n\nهندسيًا، لو رسمت الدالة على جراف، المشتقة عند نقطة معينة هي ميل الخط اللي بيمس الجراف عند تلك النقطة بالذات (يعني ميل التانجنت). لو الجراف صاعد بسرعة، المشتقة هتكون كبيرة. لو الجراف تقريبًا مستوي، المشتقة هتكون قريبة من الصفر.\n\nرياضيًا، بتحسبها كده: بتاخد نقطتين قريبين جدًا من بعض على الجراف، وتحسب التغيير في y مقسوم على التغيير في x، وبعدين تخلي المسافة بينهم تقرب من الصفر جدًا. ده اللي بيعطيك المعدل اللحظي بالظبط، مش متوسط على مسافة كبيرة.\n\nمثال سريع: لو y = x²، المشتقة بتبقى y' = 2x. يعني عند x = 3 مثلًا، معدل تغير الدالة هناك هو 6. ده معناه الدالة عند النقطة دي بتزيد بمعدل 6 لكل وحدة زيادة في x.\n\n---\nالشرح هنا بالعامية المصرية الدارجة للمفهوم، مش ترجمة من كتاب فصحى.",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 0
+      },
+      "grades": {
+        "egyptian-register": {
+          "pass": true,
+          "why": "Natural, consistent Egyptian throughout (خدها بمثال، كده، بالظبط، بتبقى). There's only a little MSA ('تلك اللحظة', 'بيعطيك'), plus an odd meta line at the end."
+        },
+        "exam-terms-kept": {
+          "pass": true,
+          "why": "Keeps المشتقة، معدل التغير and ميل. It does use English loanwords ('التانجنت', 'جراف') instead of 'المماس' and 'المنحنى', which is a weakness."
+        },
+        "correct": {
+          "pass": true,
+          "why": "Correctly defines it as rate of change and the slope of the tangent, explains the limit of the difference quotient in words, and gives the correct example y=x², y'=2x, 6 at x=3."
+        }
+      }
+    },
+    "more_natural": "skill"
+  },
+  {
+    "id": 6,
+    "prompt": "اكتب خطاب رسمي لمصلحة الضرائب المصرية نطلب فيه تحديد موعد لمراجعة الإقرار الضريبي لشركة Tayel AI Labs.",
+    "register": "msa",
+    "baseline": {
+      "text": "فيما يلي خطاب رسمي يمكنك استخدامه وتعديل البيانات الناقصة (مثل الرقم الضريبي والعنوان وتاريخ الإقرار) حسب الحاجة:\n\n---\n\n**بسم الله الرحمن الرحيم**\n\nالتاريخ: 18 نوفمبر 2026\n\n**إلى السيد الفاضل/ رئيس مصلحة الضرائب المصرية**\n**مصلحة الضرائب المصرية – [اسم المركز/المنطقة الضريبية التابعة لها الشركة]**\n\n**الموضوع: طلب تحديد موعد لمراجعة الإقرار الضريبي**\n\nتحية طيبة وبعد،\n\nنتشرف نحن شركة **Tayel AI Labs** بموافاة سيادتكم بهذا الخطاب لطلب تحديد موعد مناسب لمراجعة الإقرار الضريبي الخاص بالشركة عن [الفترة الضريبية/السنة المالية المطلوب مراجعتها، مثال: السنة الضريبية 2025]، وذلك تحقيقًا للالتزام التام بالقوانين واللوائح الضريبية المعمول بها في جمهورية مصر العربية.\n\nوتفضلوا بالعلم بالبيانات الأساسية للشركة كالآتي:\n\n- **اسم الشركة:** Tayel AI Labs\n- **الرقم الضريبي:** [يُضاف الرقم الضريبي للشركة]\n- **السجل التجاري:** [يُضاف رقم السجل التجاري إن وجد]\n- **نشاط الشركة:** [مثال: تقديم خدمات تقنية وحلول الذكاء الاصطناعي]\n- **العنوان:** [يُضاف عنوان الشركة بالتفصيل]\n- **اسم المفوض بالتواصل:** [اسم المسؤول]\n- **البريد الإلكتروني للتواصل:** adamtayel55@gmail.com\n- **رقم الهاتف:** [يُضاف رقم الهاتف]\n\nونظرًا لحرص الشركة على استكمال كافة الإجراءات الضريبية في مواعيدها المحددة، نأمل من سيادتكم التكرم بتحديد موعد مناسب لدى الجهة المختصة لمراجعة الإقرار الضريبي المقدم من الشركة، مع العلم أننا على استعداد كامل لتقديم كافة المستندات والبيانات المطلوبة لتسهيل إجراءات المراجعة.\n\nنأمل من سيادتكم الموافقة على طلبنا هذا، ونشكركم على حسن تعاونكم، مع تقديرنا الكامل لجهودكم في خدمة المجتمع الضريبي.\n\nوتفضلوا بقبول فائق الاحترام والتقدير،\n\n**عن شركة Tayel AI Labs**\nالاسم: [اسم المسؤول المفوض بالتوقيع]\nالمنصب: [المنصب الوظيفي]\nالتوقيع: ..................\nالختم الرسمي للشركة (إن وجد)\n\n---\n\n**ملاحظة:** الحقول الموضوعة بين أقواس [ ] تحتاج إلى استكمالها ببياناتكم الفعلية (الرقم الضريبي، السجل التجاري، العنوان، اسم المسؤول، رقم الهاتف، والفترة الضريبية المحددة) قبل تقديم الخطاب رسميًا.\n\nهل تريد أن أجعل الخطاب أكثر رسمية (بصياغة قانونية أدق)، أو أن أضيف فقرة تشير إلى إرفاق مستندات معينة (مثل صورة البطاقة الضريبية أو نموذج الإقرار)؟",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 0
+      },
+      "grades": {
+        "msa-register": {
+          "pass": true,
+          "why": "The whole answer, including the framing note and follow-up question, is in formal MSA with no colloquial words."
+        },
+        "simple-msa": {
+          "pass": false,
+          "why": "It is wordy and ornamental: نتشرف... بموافاة سيادتكم, تحقيقًا للالتزام التام بالقوانين, تقديرنا الكامل لجهودكم في خدمة المجتمع الضريبي. Several points also repeat."
+        },
+        "placeholders-not-invented": {
+          "pass": true,
+          "why": "Tax ID, commercial register, address, signatory, phone and tax period are placeholders. The email is the user's real address from context, not an invented one, though putting it in without asking is questionable."
+        }
+      }
+    },
+    "skill": {
+      "text": "السيد الفاضل / رئيس مصلحة الضرائب المصرية\nتحية طيبة وبعد،\n\nالموضوع: طلب تحديد موعد لمراجعة الإقرار الضريبي\n\nنحن شركة Tayel AI Labs، المسجلة برقم ضريبي [...]، نتقدم بهذا الطلب لتحديد موعد مناسب لمراجعة الإقرار الضريبي الخاص بالشركة عن الفترة الضريبية [...].\n\nنرجو من سعادتكم إفادتنا بالموعد المناسب لذلك، مع العلم أن الشركة مستعدة لتقديم كل المستندات والأوراق المطلوبة فور الطلب.\n\nوتفضلوا بقبول فائق الاحترام والتقدير.\n\nمقدمه: [الاسم]\nالصفة: [المدير المسؤول / الممثل القانوني للشركة]\nرقم الهاتف: [...]\nالبريد الإلكتروني: [...]\nالتاريخ: 18/11/2026\n\n---\nسيبت بين [ ] البيانات اللي معنديش عنها معلومة: الرقم الضريبي، الفترة الضريبية، اسم وصفة اللي هيوقع الخطاب، وبيانات التواصل. قولّي القيم ده وأكمّلها.",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 0
+      },
+      "grades": {
+        "msa-register": {
+          "pass": false,
+          "why": "The letter itself is in formal MSA, but the closing note uses Egyptian colloquial words (سيبت، اللي، معنديش، هيوقع، قولّي، ده), so under strict grading the answer has colloquial words."
+        },
+        "simple-msa": {
+          "pass": true,
+          "why": "Sentences are short and direct, with no ornamental filler."
+        },
+        "placeholders-not-invented": {
+          "pass": true,
+          "why": "Tax ID, tax period, signatory, phone and email are all left as [...] placeholders. The date is today's date, not a made-up detail."
+        }
+      }
+    },
+    "more_natural": "skill"
+  },
+  {
+    "id": 7,
+    "prompt": "I need Arabic UI text for a food delivery app aimed at Egyptians: labels for 'Add to cart', 'Checkout', 'Track order', and an empty-cart message.",
+    "register": "egyptian",
+    "baseline": {
+      "text": "Here's Arabic UI text tailored for an Egyptian audience (using everyday Egyptian phrasing rather than stiff Modern Standard Arabic, which feels more natural for app users there):\n\n| Element | Arabic | Notes |\n|---|---|---|\n| **Add to cart** | أضف للسلة | Short, standard for e-commerce/food apps in Egypt. Alternative more colloquial: **ضيف للسلة** |\n| **Checkout** | إتمام الطلب | Common for \"complete order.\" Alternative: **الدفع** (if emphasizing payment step) |\n| **Track order** | تتبع الطلب | Clear and widely understood |\n| **Empty cart message** | السلة فاضية، يلا نملاها! 🛒 | Friendly, colloquial Egyptian tone (\"Cart's empty, let's fill it up!\"). More neutral option: **السلة فاضية دلوقتي** |\n\n**Direction tip:** Since Arabic is RTL, make sure your UI layout mirrors accordingly (icons, padding, text alignment) — this is often the biggest localization pitfall, not just translation.\n\nWant me to also provide:\n- A more formal/MSA variant (for a more \"corporate\" brand tone)?\n- Button-length-constrained versions (for small mobile buttons)?\n- Additional strings (e.g., \"Order placed,\" \"Delivery time,\" \"Add tip\")?",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 1
+      },
+      "grades": {
+        "egyptian-register": {
+          "pass": false,
+          "why": "The main picks (أضف للسلة, إتمام الطلب, تتبع الطلب) are MSA-leaning, even though the answer promises everyday Egyptian phrasing. The Egyptian forms appear only as alternatives, apart from the empty-cart message."
+        },
+        "no-qum-bi": {
+          "pass": true,
+          "why": "It has no قم بـ or يمكنك constructions."
+        },
+        "short-labels": {
+          "pass": true,
+          "why": "All labels and alternatives are 1-2 words."
+        }
+      }
+    },
+    "skill": {
+      "text": "ضيف للسلة\nالدفع\nتتبع الأوردر\n\nالسلة فاضية، يلا نملاها 🛒",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 0
+      },
+      "grades": {
+        "egyptian-register": {
+          "pass": true,
+          "why": "ضيف للسلة, تتبع الأوردر and السلة فاضية، يلا نملاها sound like real Egyptian app copy."
+        },
+        "no-qum-bi": {
+          "pass": true,
+          "why": "It has no قم بـ or يمكنك constructions."
+        },
+        "short-labels": {
+          "pass": true,
+          "why": "Every button label is 1-2 words."
+        }
+      }
+    },
+    "more_natural": "skill"
+  },
+  {
+    "id": 8,
+    "prompt": "اكتب وصف منتج لهودي أسود oversized، قطن 100%، سعره 850 جنيه. متألفش أي معلومة مش موجودة.",
+    "register": "egyptian",
+    "baseline": {
+      "text": "هودي أسود أوفرسايز\n\nخامة قطن 100%\nمقاس أوفرسايز (واسع ومريح)\nلون أسود\nالسعر: 850 جنيه",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 0
+      },
+      "grades": {
+        "egyptian-register": {
+          "pass": false,
+          "why": "It uses only neutral wording (خامة، واسع ومريح، السعر) and no distinctly Egyptian Arabic words or phrasing."
+        },
+        "facts-exact": {
+          "pass": true,
+          "why": "It has all four facts. 'واسع ومريح' just explains what oversized means; it doesn't add weight, sizes, fabric origin or care instructions."
+        },
+        "no-tells": {
+          "pass": true,
+          "why": "There are no inflated phrases."
+        }
+      }
+    },
+    "skill": {
+      "text": "هودي أسود oversized، قطن 100%.\nالسعر 850 جنيه.",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 0
+      },
+      "grades": {
+        "egyptian-register": {
+          "pass": false,
+          "why": "Two bare fragments with no Egyptian Arabic markers, so the dialect isn't there; it reads as neutral Arabic."
+        },
+        "facts-exact": {
+          "pass": true,
+          "why": "It has all four facts (black, oversized, 100% cotton, 850 جنيه) and adds nothing."
+        },
+        "no-tells": {
+          "pass": true,
+          "why": "There are no inflated phrases."
+        }
+      }
+    },
+    "more_natural": "baseline"
+  },
+  {
+    "id": 9,
+    "prompt": "عميل كتب ريفيو نجمة واحدة على جوجل ماب: 'الأوردر اتأخر ساعة ونص ووصل بارد'. اكتب رد باسم المطعم.",
+    "register": "egyptian",
+    "baseline": {
+      "text": "السلام عليكم، تحت اسم المطعم ممكن يكون الرد كذا:\n\n---\n\nتحياتنا، ونشكر حضرتك على وقتك في كتابة الريفيو ده.\n\nبنقدم خالص اعتذارنا عن تجربتك معانا، وفعلاً مش من حقك ولا من حق أي عميل ينتظر ساعة ونص علشان يستقبل أوردر بارد. ده مستوى مرفوض بالنسبة لنا وما يمثلش المعايير اللي بنحاول نحافظ عليها.\n\nلو سمحت، نحب نتواصل مع حضرتك مباشرة علشان نعرف تفاصيل الأوردر (رقم الطلب أو التوقيت) ونعمل اللازم من ناحيتنا، سواء بخصوص التأخير أو جودة التسليم.\n\nشكراً تاني على صبرك، وبننتظر تواصلك علشان نقدر نرجع نكسب ثقتك.\n\n---\n\nلو تحب أعدّلك النغمة (أكتر رسمية أو أكتر ودّية)، أو تضيف اسم المطعم ورقم تواصل، قولي وأعدّله فورًا.",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 0
+      },
+      "grades": {
+        "egyptian-register": {
+          "pass": true,
+          "why": "The reply is polite Egyptian with حضرتك, but it leans formal and MSA-like (تحياتنا, بنقدم خالص اعتذارنا). It is also wrapped in meta text addressed to the user."
+        },
+        "owns-problem": {
+          "pass": true,
+          "why": "It names the 1.5-hour wait and the cold order and calls them unacceptable. However, مش من حقك ... ينتظر says the opposite of what was meant: it tells the customer they had no right to wait."
+        },
+        "no-invented-offers": {
+          "pass": true,
+          "why": "It invents no discount, refund or contact number, and it offers to add a real contact number only if the user provides one."
+        },
+        "no-closer-tells": {
+          "pass": true,
+          "why": "It avoids both banned phrases. بننتظر تواصلك is close in spirit but is not one of them."
+        }
+      }
+    },
+    "skill": {
+      "text": "آسفين جدًا على اللي حصل، ده مش المفروض يحصل خالص. التأخير ساعة ونص والأكل يوصل بارد ده تقصير منا وحقك تتضايق.\n\nابعتلنا رقم الأوردر في رسالة علشان نعرف احنا فين المشكلة حصلت بالظبط ونحلها.",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 0
+      },
+      "grades": {
+        "egyptian-register": {
+          "pass": true,
+          "why": "The reply is in natural, polite Egyptian Arabic (آسفين جدًا, ده تقصير منا, ابعتلنا). It skips حضرتك, but the warmth keeps it polite."
+        },
+        "owns-problem": {
+          "pass": true,
+          "why": "It names both the 1.5-hour delay and the cold food, and calls them the restaurant's fault (تقصير منا)."
+        },
+        "no-invented-offers": {
+          "pass": true,
+          "why": "It offers no discount, refund or phone number. It only asks the customer to send the order number in a message."
+        },
+        "no-closer-tells": {
+          "pass": true,
+          "why": "It uses neither لا تتردد في التواصل معنا nor نتمنى لكم and ends on a concrete next step."
+        }
+      }
+    },
+    "more_natural": "skill"
+  },
+  {
+    "id": 10,
+    "prompt": "7awel el kalam da l 3araby: ana msh 3aref a5ales el project 3ashan el server w2e3 mn embare7",
+    "register": "egyptian",
+    "baseline": {
+      "text": "والله معاك حق، ده موقف محبط فعلاً 😤 إزاي السيرفر واقع من إمبارح لحد دلوقتي؟ ممكن تقولي:\n\n1. **السيرفر ده نوعه إيه؟** (VPS زي DigitalOcean/AWS، ولا لوكال على جهازك، ولا Docker container، ولا إيه بالضبط)\n2. **إيه آخر حاجة ظهرت في الـ logs أو الـ error** قبل ما يقع؟\n3. **حاولت تعمل restart ليه ولا لسه مش عارف أصلاً هو واقع ليه؟**\n\nلو تعرف تنسخلي الـ error message أو الـ log، أقدر أساعدك نشخص المشكلة ونحلها بسرعة عشان تكمل الـ project. وإن كان في ملفات كود أو config محتاج تشوفها، اقولي مكانها وهفتحها.",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 0
+      },
+      "grades": {
+        "arabic-script": {
+          "pass": true,
+          "why": "Mostly Arabic script with some Latin technical terms."
+        },
+        "faithful": {
+          "pass": false,
+          "why": "Does not translate; it answers the message with sympathy and troubleshooting questions."
+        },
+        "latin-terms": {
+          "pass": true,
+          "why": "Uses السيرفر and الـ project, not MSA equivalents."
+        }
+      }
+    },
+    "skill": {
+      "text": "مش عارف أخلّص الـ project علشان الـ server واقع من إمبارح.",
+      "checks": {
+        "register_slips": 0,
+        "slip_words": [],
+        "tells": 0,
+        "tell_phrases": [],
+        "dashes": 0
+      },
+      "grades": {
+        "arabic-script": {
+          "pass": true,
+          "why": "Written in Arabic script. Only project/server stay Latin, which the latin-terms expectation allows."
+        },
+        "faithful": {
+          "pass": true,
+          "why": "Exact meaning: can't finish the project because the server has been down since yesterday."
+        },
+        "latin-terms": {
+          "pass": true,
+          "why": "Keeps 'project' and 'server' in Latin script rather than المشروع/الخادم."
+        }
+      }
+    },
+    "more_natural": "skill"
+  }
+]

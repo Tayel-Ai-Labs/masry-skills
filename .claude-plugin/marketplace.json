@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "masry-skills",
+  "owner": {
+    "name": "Tayel AI Labs",
+    "url": "https://github.com/Tayel-Ai-Labs"
+  },
+  "description": "Egyptian Arabic writing skills from Tayel AI Labs.",
+  "plugins": [
+    {
+      "name": "masry-skills",
+      "source": "./",
+      "description": "Make AI write Egyptian Arabic the way Egyptians write it.",
+      "license": "MIT",
+      "keywords": ["arabic", "egyptian", "writing", "humanize"]
+    }
+  ]
+}
