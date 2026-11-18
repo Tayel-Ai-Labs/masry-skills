@@ -75,8 +75,8 @@ and without the skill; a stronger model grades both answers **blind** (shuffled 
 | | Without | **With masry-skills** |
 |---|---:|---:|
 | Expectations met (graded blind) | 22 / 33 | **30 / 33** |
-| MSA words in Egyptian text (e.g. هذا، سوف، الذي) | 3 | **0** |
-| AI tells (e.g. تجربة فريدة) | 2 | **0** |
+| MSA words in Egyptian text | 3 | **0** |
+| AI tell phrases | 2 | **0** |
 | Em dashes | 1 | **0** |
 | Picked as more natural by the grader | 2 / 10 | **8 / 10** |
 
